@@ -1,46 +1,22 @@
+public class Gerente extends Funcionario { // extends define a herança 
 
-public class Gerente extends Funcionario{
-
-	private String nome;
-	private String cpf;
-	private double salario;
 	private int senha;
+	
+	@Override
+	public double getBonificacao() {
+	    return super.getBonificacao() + super.getSalario(); // super diz que o metodo ou atributo é da classe pai da herança
+	}
 	
 	public void setSenha(int senha) {
 		this.senha = senha;
 	}
-	
+
 	public boolean autentica(int senha) {
-		if(this.senha == senha) {
+		if (this.senha == senha) {
 			return true;
 		} else {
 			return false;
 		}
 	}
-	
-	public double getBonificacao() {
-		return this.salario;
-	}
-	
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	public String getCpf() {
-		return cpf;
-	}
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
-	}
-	public double getSalario() {
-		return salario;
-	}
-	public void setSalario(double salario) {
-		this.salario = salario;
-	}
-	
-	
-	
+
 }
