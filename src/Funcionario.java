@@ -1,5 +1,5 @@
 public class Funcionario {
-	// protected -> só é publico para os filhos da herança 
+
 	private String nome;
 	private String cpf;
 	private double salario;

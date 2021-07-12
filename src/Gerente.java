@@ -1,10 +1,10 @@
-public class Gerente extends Funcionario { // extends define a herança 
+public class Gerente extends Funcionario {
 
 	private int senha;
 	
 	@Override
 	public double getBonificacao() {
-	    return super.getBonificacao() + super.getSalario(); // super diz que o metodo ou atributo é da classe pai da herança
+	    return super.getBonificacao() + super.getSalario();
 	}
 	
 	public void setSenha(int senha) {
